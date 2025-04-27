@@ -45,6 +45,7 @@ function App() {
       <div className="flex justify-center items-center mb-4" ref={facilitiesRef}><Facilities/></div>
       
       <div className="flex justify-center items-center bg-[url('/60241.jpg')] sm:p-8" ref={locationHighlightsRef}><LocationHighlights/></div>
+      
       <div ref={locationMapRef}><LocationMap ></LocationMap></div>
       
       <Footer/>

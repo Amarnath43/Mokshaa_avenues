@@ -44,7 +44,7 @@ const Facilities = () => {
     <div>
       <h1 className='font-bold text-3xl text-center my-3.5 text-green-800'>Facilites & Amenities</h1>
 
-      <div className='md:w-[600px] md:h-[400px] w-[400px] h-[270px] py-2'>
+      <div className='md:w-[600px] md:h-[400px] w-[370px] h-[270px] py-2'>
         <img src={images[currentIndex]} alt={`image ${currentIndex}`} className='object-cover rounded'/>
         
       </div>
