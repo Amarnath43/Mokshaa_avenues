@@ -11,11 +11,11 @@ const Navbar = ({ scrollToSection, overviewRef, facilitiesRef, locationHighlight
                 <img src="IMG_6044.PNG" alt="Mokshaa avenues Logo" className='w-[100px] ' />
             </div>
             <div className='lg:flex gap-7 hidden font-bold text-lg '>
-                <button onClick={() => scrollToSection(overviewRef)}>Overview</button>
-                <button onClick={() => scrollToSection(contactRef)}>Contact us</button>
-                <button onClick={() => scrollToSection(facilitiesRef)}>Facilities</button>
-                <button onClick={() => scrollToSection(locationHighlightsRef)}>Location Highlights</button>
-                <button onClick={() => scrollToSection(locationMapRef)}>Location Map</button>
+                <button onClick={() => scrollToSection(overviewRef)} className='hover:text-green-500'>Overview</button>
+                <button onClick={() => scrollToSection(contactRef)} className='hover:text-green-500'>Contact us</button>
+                <button onClick={() => scrollToSection(facilitiesRef)} className='hover:text-green-500'>Facilities</button>
+                <button onClick={() => scrollToSection(locationHighlightsRef)} className='hover:text-green-500'>Location Highlights</button>
+                <button onClick={() => scrollToSection(locationMapRef)} className='hover:text-green-500'>Location Map</button>
                 <div className='bg-green-500 px-2 py-1 rounded-lg animate-bounce'>
                 <DownloadBrochure/>
                 </div>
