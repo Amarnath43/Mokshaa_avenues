@@ -42,13 +42,13 @@ const Facilities = () => {
 
   return (
     <div>
-      <h1 className='font-bold text-3xl text-center my-3.5'>Facilites & Amenties</h1>
+      <h1 className='font-bold text-3xl text-center my-3.5 text-green-800'>Facilites & Amenities</h1>
 
-      <div className='md:w-[600px] md:h-[400px] w-[400px] h-[300px] p-4'>
+      <div className='md:w-[600px] md:h-[400px] w-[400px] h-[270px] py-2'>
         <img src={images[currentIndex]} alt={`image ${currentIndex}`} className='object-cover rounded'/>
         
       </div>
-      <p className='font-bold text-center text-2xl '>{facilities[currentIndex]}</p>
+      <p className='font-bold text-center text-2xl text-orange-500 mt-4 mb-2 '>{facilities[currentIndex]}</p>
     </div>
   )
 }

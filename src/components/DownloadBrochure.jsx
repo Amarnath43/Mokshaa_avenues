@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Input, Modal, Form, Spin } from 'antd';
 import emailjs from '@emailjs/browser'; // Import EmailJS
-
-
+import toast from 'react-hot-toast'
 
 
 const DownloadBrochure = () => {
@@ -34,6 +33,7 @@ const DownloadBrochure = () => {
           triggerDownload();
           form.resetFields(); // Reset the form fields after successful submission
           setLoading(false);
+          toast.success("Brochure downloaded Successfully")
           closeModal(); // Close the modal after successful submission
         },
         (error) => {

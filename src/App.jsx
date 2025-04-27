@@ -7,6 +7,7 @@ import LocationMap from "./components/LocationMap"
 import Footer from "./components/Footer"
 import { useRef } from "react"
 import DownloadBrochure from "./components/DownloadBrochure"
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   // Create refs for each section
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <div className="">
+      <Toaster /> {/* This is where toasts will be shown */}
       <Navbar
        scrollToSection={scrollToSection} 
        overviewRef={overviewRef}
@@ -42,7 +44,7 @@ function App() {
       
       <div className="flex justify-center items-center mb-4" ref={facilitiesRef}><Facilities/></div>
       
-      <div className="flex justify-center items-center bg-[url('/xnxx.jpg')] sm:p-8" ref={locationHighlightsRef}><LocationHighlights/></div>
+      <div className="flex justify-center items-center bg-[url('/60241.jpg')] sm:p-8" ref={locationHighlightsRef}><LocationHighlights/></div>
       <div ref={locationMapRef}><LocationMap ></LocationMap></div>
       
       <Footer/>

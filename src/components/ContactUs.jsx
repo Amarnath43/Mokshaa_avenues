@@ -1,6 +1,7 @@
 import React,{useRef} from 'react';
 import { useForm} from 'react-hook-form';
 import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast'
 
 const ContactUs = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
@@ -17,7 +18,7 @@ const ContactUs = () => {
     emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
       .then((result) => {
         console.log(result);
-        alert('Message sent successfully!');
+        toast.success("Form filled Successfully")
         reset(); // Reset the form on success
       }, (error) => {
         console.log(error);
@@ -30,7 +31,7 @@ const ContactUs = () => {
 
   return (
     <div className='w-[500px] text-center p-10 shadow-2xl sm:rounded-lg bg-gray-200 '>
-      <h3 className='font-bold text-2xl mb-4'>Contact Us</h3>
+      <h3 className='font-bold text-2xl mb-4 text-shadow-black'>Contact Us</h3>
       <form onSubmit={handleSubmit(sendEmail)} ref={form}>
 
         {/* Name Input */}
