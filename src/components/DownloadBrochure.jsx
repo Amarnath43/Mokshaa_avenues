@@ -105,7 +105,10 @@ const DownloadBrochure = () => {
           {/* Email Field */}
           <Form.Item
             name="email"
-            rules={[{ required: true, type: 'email', message: 'Please enter a valid email address' }]}
+            rules={[{ required: true, type: 'email', message: 'Please enter your email' }, { 
+              pattern: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]{3,}\.[A-Za-z]{2,}$/, 
+              message: 'Invalid email address' 
+            }]}
           >
             <Input
               placeholder="Enter your Email"

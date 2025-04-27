@@ -80,7 +80,7 @@ const ContactUs = () => {
             placeholder="Email"
             {...register("user_email", {
               required: "Email is required",
-              pattern: { value: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/, message: "Invalid email address" }
+              pattern: { value: /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]{3,}\.[A-Za-z]{2,}$/, message: "Invalid email address" }
             })}
           />
           {errors.user_email && <p className="text-red-500 text-sm">{errors.user_email.message}</p>}
@@ -92,7 +92,7 @@ const ContactUs = () => {
             name="message"
             className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
             placeholder="Message"
-            {...register("message", { required: "Message is required" })}
+            {...register("message")}
           />
           {errors.message && <p className="text-red-500 text-sm">{errors.message.message}</p>}
         </div>
