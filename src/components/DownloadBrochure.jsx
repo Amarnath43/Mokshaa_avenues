@@ -80,7 +80,10 @@ const DownloadBrochure = () => {
           name="download-brochure"
         >
           {/* Name Field */}
-          <Form.Item name="name" rules={[{ required: true, message: 'Please enter your name' }]}>
+          <Form.Item name="name" rules={[{ required: true, message: 'Please enter your name' }, { 
+      min: 4, 
+      message: 'Name must be at least 4 characters' 
+    }]}>
             <Input
               placeholder="Enter your name"
               className="placeholder:text-gray-500" // Styling placeholder text color
@@ -90,7 +93,8 @@ const DownloadBrochure = () => {
           {/* Phone Number Field */}
           <Form.Item
             name="phonenumber"
-            rules={[{ required: true, pattern: /^[0-9]{10}$/, message: 'Phone number must be exactly 10 digits' }]}
+            rules={[{ required: true, pattern: { value: /^[6-9][0-9]{9}$/, message: "Phone number must start with 6, 7, 8, or 9 and be exactly 10 digits" }
+            }]}
           >
             <Input
               placeholder="Enter your Mobile Number"

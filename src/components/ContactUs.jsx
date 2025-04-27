@@ -51,7 +51,7 @@ const ContactUs = () => {
             name="user_name"
             className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
             placeholder="Enter your name"
-            {...register("user_name", { required: "Name is required" })}
+            {...register("user_name", { required: "Name is required", minLength: { value: 4, message: 'Name must be at least 4 characters' } })}
           />
           {errors.user_name && <p className="text-red-500 text-sm">{errors.user_name.message}</p>}
         </div>
@@ -65,7 +65,7 @@ const ContactUs = () => {
             placeholder="Phone number"
             {...register("user_phonenumber", { 
               required: "Phone number is required",
-              pattern: { value: /^[0-9]{10}$/, message: "Phone number must be exactly 10 digits" }
+              pattern: { value: /^[6-9][0-9]{9}$/, message: "Phone number must start with 6, 7, 8, or 9 and be exactly 10 digits" }
             })}
           />
           {errors.user_phonenumber && <p className="text-red-500 text-sm">{errors.user_phonenumber.message}</p>}
