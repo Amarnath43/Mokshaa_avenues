@@ -6,7 +6,7 @@ const Navbar = ({ scrollToSection, overviewRef, facilitiesRef, locationHighlight
     const [isMenuButtonOpen, setIsMenuButtonOpen]=useState(false);
     return (
         <div>
-        <div className='flex justify-between items-center px-9 '>
+        <div className='flex justify-between items-center px-9 bg-white '>
             <div >
                 <img src="IMG_6044.PNG" alt="Mokshaa avenues Logo" className='w-[100px] ' />
             </div>
