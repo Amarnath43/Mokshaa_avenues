@@ -2,8 +2,8 @@ import React from 'react';
 
 const LocationHighlights = () => {
   const location_highlights = [
-    "2 Km From Mumbai Highway",
-    "RRR",
+    "Just 100Mtrs. from Mumbai Highway",
+    "Very near to RRR",
     "Just 5 Min. Drive from Sangareddy",
     "Indian Institute of Technology (IIT)",
     "Gitam University",
@@ -11,7 +11,7 @@ const LocationHighlights = () => {
     "NIMZ",
     "ODF Ordnance Factory",
     "Collectorate Office",
-    "Bharath Dynamics Limited",
+    "Bharath Dynamics Limites",
     "Reputed Schools & Colleges",
     "Pollution Free Environment"
   ];

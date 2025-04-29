@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroPage = () => {
   return (
-    <div className="relative bg-gradient-to-r from-green-400 to-yellow-500 min-h-screen flex flex-col lg:flex-row justify-center items-center px-6 py-10 sm:px-16 lg:px-24">
+    <div className="relative bg-gradient-to-r from-green-400 to-blue-500 min-h-screen flex flex-col lg:flex-row justify-center items-center px-6 py-10 sm:px-16 lg:px-24">
       {/* Image Section */}
       <div className="lg:w-1/2 w-full mb-8 lg:mb-0 lg:mr-10">
         <img
@@ -14,21 +14,21 @@ const HeroPage = () => {
 
       {/* Text Section */}
       <div className="lg:w-1/2 w-full text-center lg:text-left flex flex-col justify-center items-center lg:items-start gap-6">
-        <h1 className="text-white font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight">
+        <h1 className="text-white font-extrabold text-3xl sm:text-4xl lg:text-5xl leading-tight font-serif">
           Welcome to <span className="text-amber-300">Mokshaa Avenues!</span>
         </h1>
         <h6 className="text-white text-2xl sm:text-3xl font-semibold">
-          Villa Open Plots <br />@Nandikandi <br /> Mumbai Highway
+          Premium Open Villa Plots <br />near Mumbai Highway<br /> @Nandikandi
         </h6>
-        <p className="text-black text-xl sm:text-xl font-medium mt-2">
+        <p className="text-white text-xl sm:text-2xl font-semibold mt-2 ">
           Bank Loans Available
         </p>
+        
 
         
       </div>
 
-      {/* Background Overlay */}
-      <div className="absolute inset-0 bg-black opacity-30 rounded-lg"></div>
+      
     </div>
   );
 };

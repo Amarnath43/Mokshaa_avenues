@@ -35,7 +35,7 @@ function App() {
        contactRef={contactRef}
        locationMapRef={locationMapRef}
       />
-      <hr />
+      
       <HeroPage ref={overviewRef}/>
       
       <div className="flex justify-center items-center m-auto bg-gray-300 bg-[url('/nnn.jpg')] mb-2 md:p-10" ref={contactRef}>
